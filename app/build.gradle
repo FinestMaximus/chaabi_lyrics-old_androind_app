@@ -5,11 +5,11 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        applicationId "dz.lx0741.chaabilyrics"
+        applicationId "dz.louss.chaabikhelwa"
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        versionCode 10
+        versionName "1.1"
     }
     buildTypes {
         release {

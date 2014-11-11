@@ -3,7 +3,7 @@
     style="@style/AppTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="dz.lx0741.chaabilyrics.MainActivity" >
+    tools:context="dz.louss.chaabikhelwa.MainActivity" >
 
     <WebView
         android:id="@+id/webView1"

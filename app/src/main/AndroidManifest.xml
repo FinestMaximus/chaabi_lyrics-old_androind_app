@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dz.lx0741.chaabilyrics"
-    android:versionCode="3"
-    android:versionName="0.3"
+    package="dz.louss.chaabikhelwa"
+    android:versionCode="11"
+    android:versionName="1.2"
     android:hardwareAccelerated="true" >
     <uses-sdk
         android:minSdkVersion="14"
@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         <activity
-            android:name="dz.lx0741.chaabilyrics.SplashScreen"
+            android:name="dz.louss.chaabikhelwa.SplashScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
@@ -26,7 +26,7 @@
         </activity>
         <!--Main activity-->
         <activity
-            android:name="dz.lx0741.chaabilyrics.MainActivity"
-            android:label="@string/app_name" ></activity>
+            android:name="dz.louss.chaabikhelwa.MainActivity"
+            android:label="@string/app_name" />
     </application>
 </manifest>
