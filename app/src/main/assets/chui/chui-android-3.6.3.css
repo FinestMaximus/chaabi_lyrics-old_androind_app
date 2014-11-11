@@ -1,3 +1,21 @@
+/*
+    pO\
+   6  /\
+     /OO\
+    /OOOO\
+   /OOOOOO\
+  (OOOOOOOO)
+   \:~==~:/
+
+ChocolateChip-UI
+ChUI-Android.css
+Copyright 2014 Sourcebits www.sourcebits.com
+License: MIT
+Version: 3.6.3
+*/
+/*
+  To create a custom theme, adjust the color for @primaryColor. If you want a secondary color, uncomment the line for @secondaryColor and set it's value to what you want.
+*/
 .attentionGrapper {
 color:#666!important;
 font-family:"Times New Roman",Times,serif;
@@ -182,7 +200,7 @@ justify-content:center;
 -moz-box-align:center;
 -webkit-align-items:center;
 align-items:center;
-font-size:12px;
+font-size: 14px;
 height:40px;
 -webkit-box-sizing:border-box;
 -moz-box-sizing:border-box;
@@ -208,7 +226,7 @@ background-size:0;
 background-repeat:no-repeat;
 background-position:center center;
 -webkit-animation-fill-mode:forwards;
-margin:0 10px;
+margin: 0px 1px;
 }
 
 a.button:hover {
@@ -303,6 +321,7 @@ top:8px;
 
 html[dir=rtl] a.button {
 line-height:12pt;
+width: 50px;
 }
 
 html[dir=rtl] a.button.back,html[dir=rtl] a.button.backTo {
@@ -1156,7 +1175,8 @@ padding:0 16px;
 }
 
 .toolbar>.button {
-color:#000!important;
+color: #000!important;
+background-color: rgba(243, 219, 95, 0.69);
 }
 
 .toolbar>.button:hover {
