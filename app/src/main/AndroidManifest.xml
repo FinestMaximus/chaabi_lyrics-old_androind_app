@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="dz.louss.chaabikhelwa"
-    android:versionCode="11"
-    android:versionName="1.2"
-    android:hardwareAccelerated="true" >
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="21" />
-    <!--uses-permission android:name="android.permission.INTERNET"/-->
+    android:hardwareAccelerated="true">
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+
         <activity
             android:name="dz.louss.chaabikhelwa.SplashScreen"
             android:label="@string/app_name"
@@ -24,9 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--Main activity-->
+
         <activity
             android:name="dz.louss.chaabikhelwa.MainActivity"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+
     </application>
 </manifest>
