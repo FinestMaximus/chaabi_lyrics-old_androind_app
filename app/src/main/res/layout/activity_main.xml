@@ -13,6 +13,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:hardwareAccelerated="true"/>
+        android:hardwareAccelerated="true"
+        android:layout_marginBottom="50dp" />
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="dz.louss.chaabikhelwa.MainActivity$AdFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
