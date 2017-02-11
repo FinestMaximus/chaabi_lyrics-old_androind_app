@@ -9,13 +9,13 @@ android {
             storePassword 'dontforgetit'
         }
     }
-    compileSdkVersion 21
-    buildToolsVersion "20.0.0"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId "dz.louss.chaabikhelwa"
         minSdkVersion 14
-        targetSdkVersion 21
-        versionCode 14
+        targetSdkVersion 25
+        versionCode 20
         versionName "1.0"
         signingConfig signingConfigs.config
     }
@@ -31,6 +31,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.0'
-    compile 'com.google.android.gms:play-services:6.1+'
+    compile 'com.google.android.gms.play-services:10.0.1'
+    compile 'com.android.support:appcompat-v7:25.1.1'
 }

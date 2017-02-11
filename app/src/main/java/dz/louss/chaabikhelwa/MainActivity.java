@@ -1,5 +1,6 @@
 /*TODO
 * add facebook support
+*   - check html5 option with smc
 *   - login and commenting system*/
 
 package dz.louss.chaabikhelwa;
@@ -62,12 +63,14 @@ public class MainActivity extends Activity {
             }
         });
 
-        String url = "https://dl.dropboxusercontent.com/u/61258639/chaabilyrics/www/index.html";
+        String url = "file:///android_asset/www/index.html";
+        // String url = "https://dl.dropboxusercontent.com/u/61258639/chaabilyrics preprod/www/index.html";
         // String url = "file:///android_asset/www/index.html";
 
         wv.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         wv.getSettings().setJavaScriptEnabled(true);
         wv.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+
 
         wv.loadUrl(url);
     }
