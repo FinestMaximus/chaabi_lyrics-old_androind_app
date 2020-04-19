@@ -20,8 +20,9 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+// import com.google.android.gms.ads.AdRequest;
+// import com.google.android.gms.ads.AdView;
+// import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends Activity {
     private WebView wv;
@@ -34,7 +35,7 @@ public class MainActivity extends Activity {
         wv = (WebView) this.findViewById(R.id.webView1);
         wv.setWebViewClient(new WebViewClient() {
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                wv.loadUrl("file:///android_asset/custom_url_error.htm");
+                wv.loadUrl("https://algerianchaabilyrics.com");
 
             }
 
@@ -63,9 +64,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        String url = "file:///android_asset/www/index.html";
-        // String url = "https://dl.dropboxusercontent.com/u/61258639/chaabilyrics preprod/www/index.html";
-        // String url = "file:///android_asset/www/index.html";
+        String url = "https://algerianchaabilyrics.com";
 
         wv.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         wv.getSettings().setJavaScriptEnabled(true);
@@ -106,64 +105,64 @@ public class MainActivity extends Activity {
     /**
      * This class makes the ad request and loads the ad.
      */
-    public static class AdFragment extends Fragment {
+    // public static class AdFragment extends Fragment {
 
-        private AdView mAdView;
+    //     private AdView mAdView;
 
-        public AdFragment() {
-        }
+    //     public AdFragment() {
+    //     }
 
-        @Override
-        public void onActivityCreated(Bundle bundle) {
-            super.onActivityCreated(bundle);
+    //     @Override
+    //     public void onActivityCreated(Bundle bundle) {
+    //         super.onActivityCreated(bundle);
 
-            // Gets the ad view defined in layout/ad_fragment.xml with ad unit ID set in
-            // values/strings.xml.
-            mAdView = (AdView) getView().findViewById(R.id.adView);
+    //         // Gets the ad view defined in layout/ad_fragment.xml with ad unit ID set in
+    //         // values/strings.xml.
+    //         mAdView = (AdView) getView().findViewById(R.id.adView);
 
-            // get test ads on a physical device. e.g.
-            // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
-            AdRequest adRequest = new AdRequest.Builder()
-                    .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                    .build();
+    //         // get test ads on a physical device. e.g.
+    //         // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
+    //         AdRequest adRequest = new AdRequest.Builder()
+    //         .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+    //         .build();
 
-            // Start loading the ad in the background.
-            mAdView.loadAd(adRequest);
-        }
+    //         // Start loading the ad in the background.
+    //         mAdView.loadAd(adRequest);
+    //     }
 
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            return inflater.inflate(R.layout.fragment_ad, container, false);
-        }
+    //     @Override
+    //     public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    //        Bundle savedInstanceState) {
+    //         return inflater.inflate(R.layout.fragment_ad, container, false);
+    //     }
 
-        /** Called when leaving the activity */
-        @Override
-        public void onPause() {
-            if (mAdView != null) {
-                mAdView.pause();
-            }
-            super.onPause();
-        }
+    //     /** Called when leaving the activity */
+    //     @Override
+    //     public void onPause() {
+    //         if (mAdView != null) {
+    //             mAdView.pause();
+    //         }
+    //         super.onPause();
+    //     }
 
-        /** Called when returning to the activity */
-        @Override
-        public void onResume() {
-            super.onResume();
-            if (mAdView != null) {
-                mAdView.resume();
-            }
-        }
+    //     /** Called when returning to the activity */
+    //     @Override
+    //     public void onResume() {
+    //         super.onResume();
+    //         if (mAdView != null) {
+    //             mAdView.resume();
+    //         }
+    //     }
 
-        /** Called before the activity is destroyed */
-        @Override
-        public void onDestroy() {
-            if (mAdView != null) {
-                mAdView.destroy();
-            }
-            super.onDestroy();
-        }
+    //     /** Called before the activity is destroyed */
+    //     @Override
+    //     public void onDestroy() {
+    //         if (mAdView != null) {
+    //             mAdView.destroy();
+    //         }
+    //         super.onDestroy();
+    //     }
 
-    }
+    // }
 
 }
